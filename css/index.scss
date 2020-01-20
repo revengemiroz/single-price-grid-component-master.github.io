@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: hsl(204, 43%, 93%);
+    font-family: 'Karla';
+    font-size: 16px;
+}
+
+// colors
+.white{
+    color: white;
+}
+
+.grey{
+   color: hsl(204, 43%, 93%);
+}
+
+.darkgrey{
+    color: hsl(218, 22%, 67%);
+}
+
+.cyan{
+    color: hsl(179, 62%, 43%);
+}
+
+.byellow{
+    color: hsl(71, 73%, 54%);
+}
+
+//font-weight
+.sevenhundredweight{
+    font-weight: 700;
+}
+
+//margin-btm
+.marginbtm{
+    margin-bottom: 1em;
+}
+
+.linespacing{
+    line-height: 2em;
+}
+
+.padding{
+    padding: 2em 2.5em 2em 2.2em;
+}
+
+main{
+    
+    padding: 2em 3em 2em 3em;
+    
+}
+
+.firstsection{
+background: white;
+border-radius:5px 5px 0px 0px ;
+
+p:nth-child(2){
+    font-size: 1.2em;
+}
+}
+
+.secondsection{
+    background: hsl(179, 62%, 43%);
+    display: flex;
+    flex-direction: column;
+
+    p:nth-child(2){
+        margin-bottom: 0.5em;
+        letter-spacing: 0.05em;
+    }
+
+    p:nth-child(3){
+        margin-bottom: 2em;
+        letter-spacing: 0.04em;
+    }
+}
+
+.thirdsection{
+    background: #4abebd;
+    border-radius:0px 0px 5px 5px ;
+}
+
+.title{
+    font-size: 1.5rem;
+}
+
+.list{
+
+    p:nth-child(2n + 0){
+        line-height: 2em;
+    }
+}
+
+button{
+    background: hsl(71, 73%, 54%);
+    color: white;
+    padding: 1.2em 2em 1.2em 2em;
+    border-radius: 5px;
+    border: none;
+    letter-spacing: .1em;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+span{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-right:.4em;
+}
+
+
+@media(min-width:700px){
+
+    main{
+        
+        padding: 12em 5em 10em 5em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 15em 1fr;
+
+        .firstsection{
+            grid-row: 1 / 1;
+            grid-column: 1 / 3;
+        }
+
+        .secondsection{
+            grid-row: 2/2;
+            grid-column: 1/2;
+            border-bottom-left-radius: 5px;
+
+        }
+
+        .thirdsection{
+            border-bottom-left-radius: 0px;
+            grid-row: 2/2;
+            grid-column: 2/2;
+        }
+    }
+
+}
+
+
+@media(min-width:1200px){
+    main{
+        padding: 12em 6em 12em 6em;
+    }
+
+    .padding{
+        padding: 3.5em 4em 2em 3.5em;
+    }
+
+
+}
